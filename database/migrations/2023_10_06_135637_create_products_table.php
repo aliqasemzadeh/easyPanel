@@ -21,7 +21,7 @@ return new class extends Migration
             $table->double('bandwidth');
             $table->double('duration');
             $table->timestamps();
-            $table->softDelete();
+            $table->softDeletes();
         });
     }
 

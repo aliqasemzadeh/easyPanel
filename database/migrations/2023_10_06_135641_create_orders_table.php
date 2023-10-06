@@ -13,10 +13,12 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->string('domain');
             $table->bigInteger('user_id');
             $table->bigInteger('product_id');
+            $table->expirable();
             $table->timestamps();
-            $table->softDelete();
+            $table->softDeletes();
         });
     }
 

@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0ce5353653ac4aa921859375d213f73",
+    "content-hash": "d31ef1740a3542af2abde57c4f4982d8",
     "packages": [
+        {
+            "name": "alajusticia/laravel-expirable",
+            "version": "v2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alajusticia/laravel-expirable.git",
+                "reference": "ca34a8bb6a15c298df652b00cc80b2a265842667"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alajusticia/laravel-expirable/zipball/ca34a8bb6a15c298df652b00cc80b2a265842667",
+                "reference": "ca34a8bb6a15c298df652b00cc80b2a265842667",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^10.0",
+                "illuminate/database": "^10.0",
+                "illuminate/support": "^10.0",
+                "nesbot/carbon": "^2.62.1",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^8.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ALajusticia\\Expirable\\ExpirableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ALajusticia\\Expirable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Lajusticia",
+                    "email": "anthonylajusticia@gmail.com",
+                    "homepage": "https://anthonylajusticia.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Make Eloquent models expirable",
+            "support": {
+                "issues": "https://github.com/alajusticia/laravel-expirable/issues",
+                "source": "https://github.com/alajusticia/laravel-expirable/tree/v2.2"
+            },
+            "time": "2023-07-18T11:51:05+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
