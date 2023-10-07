@@ -19,7 +19,10 @@
             <td>{{ $product->name }}</td>
             <td>{{ $product->space }}</td>
             <td>{{ $product->price }}</td>
-            <td></td>
+            <td>
+
+
+            </td>
         </tr>
         @endforeach
 
