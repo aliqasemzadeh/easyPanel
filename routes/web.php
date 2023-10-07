@@ -28,3 +28,6 @@ Route::prefix('admin')->group(function () {
 });
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/add-cart/{product}', [App\Http\Controllers\HomeController::class, 'addCart'])->name('add-cart');
+Route::get('/remove-cart/{product}', [App\Http\Controllers\HomeController::class, 'removeCart'])->name('remove-cart');
+Route::get('/cart', [App\Http\Controllers\HomeController::class, 'cart'])->name('cart');

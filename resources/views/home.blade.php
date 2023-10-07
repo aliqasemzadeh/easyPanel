@@ -19,7 +19,7 @@
                 <td>{{ $product->space }}</td>
                 <td>{{ $product->price }}</td>
                 <td>
-                    <a href="{{ route('admin.product.edit', [$product->id]) }}" class="btn btn-success btn-sm">Add To Cart</a>
+                    <a href="{{ route('add-cart', [$product->id]) }}" class="btn btn-success btn-sm">Add To Cart</a>
                 </td>
             </tr>
         @endforeach
