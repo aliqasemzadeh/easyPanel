@@ -20,8 +20,7 @@
             <td>{{ $product->space }}</td>
             <td>{{ $product->price }}</td>
             <td>
-
-
+                <a href="{{ route('admin.product.edit', [$product->id]) }}" class="btn btn-success btn-sm">Edit</a>
             </td>
         </tr>
         @endforeach
