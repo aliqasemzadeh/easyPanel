@@ -20,6 +20,11 @@ class HomeController extends Controller
 
     public function cart()
     {
+        return view('cart');
+    }
+
+    public function payment()
+    {
 
     }
 
@@ -38,7 +43,12 @@ class HomeController extends Controller
 
     public function removeCart(Product $product)
     {
+        \Cart::update($product->id, array(
+            'quantity' => -1,
+            'attributes' => array()
+        ));
 
+        return redirect()->route('cart');
     }
 
 
