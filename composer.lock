@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc2c158443dd5f0e32ba02231711fb71",
+    "content-hash": "ea590d0fbd9a2900e1f07cb9df28f8d4",
     "packages": [
         {
             "name": "alajusticia/laravel-expirable",
@@ -2495,6 +2495,100 @@
                 }
             ],
             "time": "2023-02-08T01:06:31+00:00"
+        },
+        {
+            "name": "parsisolution/gateway",
+            "version": "v1.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/parsisolution/gateway.git",
+                "reference": "763ef38693f0ea9132d4e4a74c743b9d711fbbaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/parsisolution/gateway/zipball/763ef38693f0ea9132d4e4a74c743b9d711fbbaa",
+                "reference": "763ef38693f0ea9132d4e4a74c743b9d711fbbaa",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": ">=5.4",
+                "illuminate/database": ">=5.4",
+                "illuminate/http": ">=5.4",
+                "illuminate/support": ">=5.4",
+                "illuminate/view": ">=5.4",
+                "nesbot/carbon": ">=1.20",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^7.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Parsisolution\\Gateway\\GatewayServiceProvider"
+                    ],
+                    "aliases": {
+                        "Gateway": "Parsisolution\\Gateway\\Facades\\Gateway"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Parsisolution\\Gateway\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hamed Ehtesham",
+                    "email": "parsisolution@gmail.com"
+                }
+            ],
+            "description": "A Laravel package for connecting to all Iraninan payment gateways",
+            "homepage": "https://github.com/parsisolution/gateway",
+            "keywords": [
+                "Bank",
+                "Meli",
+                "Payline",
+                "asan-pardakht",
+                "dargah",
+                "gateway",
+                "ipay",
+                "iran",
+                "iranian-banks",
+                "irankish",
+                "jibit",
+                "laravel",
+                "mabna",
+                "mabna2",
+                "mellat",
+                "nextpay",
+                "pardakht",
+                "pardano",
+                "parsian",
+                "pay",
+                "pay-ir",
+                "payment",
+                "persian-banks",
+                "poolport",
+                "port",
+                "sabapay",
+                "sadad",
+                "saderat",
+                "saman",
+                "shaparak",
+                "zarinpal"
+            ],
+            "support": {
+                "issues": "https://github.com/parsisolution/gateway/issues",
+                "source": "https://github.com/parsisolution/gateway"
+            },
+            "time": "2022-04-20T09:06:26+00:00"
         },
         {
             "name": "phpoption/phpoption",
