@@ -152,7 +152,7 @@
                 <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                            <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="{{ route('admin.dashboard.index') }}">
                                 <svg class="bi"><use xlink:href="#house-fill"/></svg>
                                 Dashboard
                             </a>
@@ -164,7 +164,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2" href="#">
+                            <a class="nav-link d-flex align-items-center gap-2" href="{{ route('admin.product.index') }}">
                                 <svg class="bi"><use xlink:href="#cart"/></svg>
                                 Products
                             </a>
@@ -180,7 +180,7 @@
             </div>
         </div>
 
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 p-4">
             @yield('content')
         </main>
     </div>
