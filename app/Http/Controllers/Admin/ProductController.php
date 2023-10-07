@@ -82,8 +82,9 @@ class ProductController extends Controller
         return redirect()->route('admin.product.index');
     }
 
-    public function delete(Request $request)
+    public function delete(Product $product)
     {
-
+        $product->delete();
+        return redirect()->route('admin.product.index');
     }
 }
