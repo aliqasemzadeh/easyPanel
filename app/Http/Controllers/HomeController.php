@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Parsisolution\Gateway\Facades\Gateway;
 
 class HomeController extends Controller
 {
