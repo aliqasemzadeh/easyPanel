@@ -31,3 +31,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     forceTLS: (import.meta.env.VITE_PUSHER_SCHEME ?? 'https') === 'https',
 //     enabledTransports: ['ws', 'wss'],
 // });
+import('@popperjs/core');
+import Bootstrap from 'bootstrap';
+import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../../vendor/aliqasemzadeh/livewire-bootstrap-modal/resources/js/modals.js';

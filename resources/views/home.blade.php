@@ -26,4 +26,8 @@
 
         </tbody>
     </table>
+
+    <button type="button" wire:click="$dispatch('showModal', ['alias' => 'counter'])">
+        {{ __('Update Profile') }}
+    </button>
 @endsection
